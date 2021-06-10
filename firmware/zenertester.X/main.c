@@ -219,15 +219,16 @@ void scanAndPrintZener()
     {
         printString(" Short Circuit", 14);
         
-        setLocation(0, 2);        
+        setLocation(0, 2);
+        printString("R ",2);
         sendChr(LCD_CCHAR_POINT);
         
-        for(temp = 0; temp < 14; temp++)
+        for(temp = 0; temp < 10; temp++)
         {
             sendChr(LCD_CCHAR_WIRE);
         }
-        
         sendChr(LCD_CCHAR_POINT);
+        printString(" B",2);
         return;
     }
     
@@ -254,9 +255,10 @@ void scanAndPrintZener()
         
         // Draw diode direction.
         setLocation(0, 2);
+        printString("R ",2);
         sendChr(LCD_CCHAR_POINT);
                 
-        for(temp = 0; temp < 6; temp++)
+        for(temp = 0; temp < 4; temp++)
         {
             sendChr(LCD_CCHAR_WIRE);
         }
@@ -274,12 +276,13 @@ void scanAndPrintZener()
             sendChr(LCD_CCHAR_ARROW_REV);
         }
         
-        for(temp = 0; temp < 6; temp++)
+        for(temp = 0; temp < 4; temp++)
         {
             sendChr(LCD_CCHAR_WIRE);
         }
         
         sendChr(LCD_CCHAR_POINT);
+        printString(" B",2);
         return;
     }
     
@@ -289,9 +292,10 @@ void scanAndPrintZener()
     
     // Draw diode direction.
     setLocation(0, 2);
+    printString("R ",2);
     sendChr(LCD_CCHAR_POINT);
         
-    for(temp = 0; temp < 6; temp++)
+    for(temp = 0; temp < 4; temp++)
     {
         sendChr(LCD_CCHAR_WIRE);
     }
@@ -309,10 +313,11 @@ void scanAndPrintZener()
         sendChr(LCD_CCHAR_ARROW_REV);
     }
 
-    for(temp = 0; temp < 6; temp++)
+    for(temp = 0; temp < 4; temp++)
     {
         sendChr(LCD_CCHAR_WIRE);
     }
-
-    sendChr(LCD_CCHAR_POINT);    
+    
+    sendChr(LCD_CCHAR_POINT); 
+    printString(" B",2);
 }
