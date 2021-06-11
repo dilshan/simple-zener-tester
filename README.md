@@ -14,5 +14,5 @@ The following photographs illustrate the prototype version build by [Boris Peshe
 
 ![Short circuit detection](https://raw.githubusercontent.com/dilshan/simple-zener-tester/master/resources/zener-tester-pic1.jpg)
 ![Reading got from vintage zener diode :O](https://raw.githubusercontent.com/dilshan/simple-zener-tester/master/resources/zener-tester-pic2.jpg)
-![Reading from the generally available DO35 type zener diode](https://raw.githubusercontent.com/dilshan/simple-zener-tester/master/resources/zener-tester-pic3.jpg)
+![Reading from the generally available diode](https://raw.githubusercontent.com/dilshan/simple-zener-tester/master/resources/zener-tester-pic3.jpg)
 
